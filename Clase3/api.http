@@ -1,0 +1,35 @@
+###
+GET http://localHost:1234/ricks
+
+###
+GET http://localHost:1234/ricks/218
+
+###
+GET http://localHost:1234/ricks?status=Dead
+
+###
+POST http://localHost:1234/ricks
+Content-Type: application/json
+
+      {
+    "name": "sebas Rick",
+    "status": "Dead",
+    "species": "cyber",
+    "type": "especial",
+    "gender": "aug?",
+    "image": "https://rickandmortyapi.com/api/character/avatar/11.jpeg"
+  }
+
+
+###
+PATCH http://localHost:1234/ricks/218
+Content-Type: application/json
+
+{
+  "name": "da Rick",
+  "status":"survuce",
+  "type":"human"
+}
+
+###
+DELETE  http://localhost:1234/ricks/218
